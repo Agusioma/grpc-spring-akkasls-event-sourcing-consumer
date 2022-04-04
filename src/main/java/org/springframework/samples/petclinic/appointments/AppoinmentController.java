@@ -36,6 +36,6 @@ public class AppoinmentController {
 		Appointments responseList = restTemplate.getForObject("http://localhost:8080/appointments/vet/23/bookings/345", Appointments.class);
 
 		model.addAttribute("vetAppoints", responseList.getBookings());
-		return "bookings/tester.html";
+		return "bookings/vetBookings.html";
 	}
 }
